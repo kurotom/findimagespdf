@@ -2,4 +2,4 @@
 """
 Version of findimagespdf.
 """
-VERSION = "0.1.41"
+VERSION = "0.1.0"

@@ -1,6 +1,6 @@
 [project]
 name = "findimagespdf"
-version = "0.1.41"
+version = "0.1.0"
 description = "Search and save images from PDF files."
 authors = [
     {name = "kurotom",email = "55354389+kurotom@users.noreply.github.com"}
