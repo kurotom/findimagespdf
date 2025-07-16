@@ -145,4 +145,4 @@ type = ["mypy (>=1.14.1)"]
 [metadata]
 lock-version = "2.1"
 python-versions = "^3.9"
-content-hash = "7a9766089e0e9c596d4f37868f4c6b4c73e0b865e0a756280640fd9bb688c017"
+content-hash = "c03a55e13febeafd01bae2251e4089d73020af76d8e9f0bae3d2740b0f7d59ed"

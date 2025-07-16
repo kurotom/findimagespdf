@@ -1,17 +1,12 @@
 [project]
 name = "findimagespdf"
-version = "0.1.0"
+version = "0.1.41"
 description = "Search and save images from PDF files."
 authors = [
     {name = "kurotom",email = "55354389+kurotom@users.noreply.github.com"}
 ]
 packages = [{include = "findimagespdf"}]
 readme = "README.md"
-requires-python = "^3.9"
-dependencies = [
-    "pillow>=11.0",
-    "platformdirs (>=4.3.8,<5.0.0)",
-]
 repository = "https://github.com/kurotom/findimagespdf"
 license = "MIT"
 keywords = ["pdf", "pdf-parser", "image", "pillow"]
@@ -22,6 +17,11 @@ classifiers = [
 "Programming Language :: Python :: 3.11",
 "Programming Language :: Python :: 3.12"
 ]
+
+[tool.poetry.dependencies]
+python = "^3.9"
+pillow = "^11.0"
+platformdirs = "^4.3.7"
 
 [build-system]
 requires = ["poetry-core>=2.0.0,<3.0.0"]
