@@ -1,7 +1,7 @@
 [project]
 name = "findimagespdf"
 version = "0.1.0"
-description = "Pdf parser to search for images."
+description = "Search and save images from PDF files."
 authors = [
     {name = "kurotom",email = "55354389+kurotom@users.noreply.github.com"}
 ]
@@ -12,7 +12,8 @@ dependencies = [
     "pillow>=11.0",
     "platformdirs (>=4.3.8,<5.0.0)",
 ]
-repository = ""
+repository = "https://github.com/kurotom/findimagespdf"
+license = "MIT"
 keywords = ["pdf", "pdf-parser", "image", "pillow"]
 classifiers = [
 "Operating System :: OS Independent",
@@ -27,4 +28,4 @@ requires = ["poetry-core>=2.0.0,<3.0.0"]
 build-backend = "poetry.core.masonry.api"
 
 [tool.poetry.urls]
-"Bug Tracker" = ""
+"Bug Tracker" = "https://github.com/kurotom/findimagespdf/issues"
