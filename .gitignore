@@ -1,0 +1,8 @@
+*/*/__pycache__
+*/__pycache__
+pdf_samples/
+*.pdf
+*.PDF
+dist/
+notas.txt
+run.py
