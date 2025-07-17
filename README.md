@@ -103,7 +103,7 @@ pdf.close()           # closes pdf file.
 The main pdf processing methods for image search are:
 
 | Method | Description |
-|-|-|-|
+|-|-|
 | `find_startxref` | find the xref table of the file. |
 | `search_deep` | optional but necessary in case the xref table is corrupted or to search for hidden or unlinked images. |
 | `search_images` | search and filter images from the collected data. |
