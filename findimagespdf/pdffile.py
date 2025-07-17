@@ -32,8 +32,10 @@ class PDFFile:
     def __init__(
         self,
         path_or_bytes: Union[str, bytes] = None,
+        destination: str = None,
     ) -> None:
         self.path_or_bytes = path_or_bytes
+        self.destination = destination
         self.file = None
         self.table_xref = []
         self.images = []
@@ -58,11 +60,18 @@ class PDFFile:
             except TypeError as e:
                 dir_name = get_md5_hash(self.path_or_bytes.getvalue())
 
-        self.base_path = PathClass.join(
-                                    PathClass.get_desktop(),
-                                    PDFFile.DIRECTORY,
-                                    dir_name
-                                )
+        if self.destination is None:
+            self.base_path = PathClass.join(
+                                        PathClass.get_desktop(),
+                                        PDFFile.DIRECTORY,
+                                        dir_name
+                                    )
+        else:
+            self.base_path = PathClass.join(
+                                        self.destination,
+                                        PDFFile.DIRECTORY,
+                                        dir_name
+                                    )
 
     def open(
         self,

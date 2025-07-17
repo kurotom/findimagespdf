@@ -27,6 +27,40 @@ $ pip install findimagespdf
 ```
 
 
+# CLI
+
+```bash
+$ findimagespdf --help
+usage: findimagespdf [-h] -p PATH [-d DEST] [-v]
+
+Extract images of PDF files.
+
+options:
+  -h, --help            show this help message and
+                        exit
+  -p PATH, --path PATH  Path of PDF file or
+                        directory of PDF files.
+  -d DEST, --dest DEST  Path of the directory to
+                        store the images, by
+                        default the directory is on
+                        the desktop.
+  -v, --verbose         Verbose
+
+extracts images and stores them in a directory on
+the desktop.
+```
+
+## Examples
+
+```bash
+$ findimagespdf --path pdf_samples
+
+$ findimagespdf --path pdf_samples --dest .
+
+$ findimagespdf --path pdf_samples --dest . --verbose
+```
+
+
 # Usage
 
 * Using `with`

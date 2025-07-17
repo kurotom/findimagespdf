@@ -1,6 +1,6 @@
 [project]
 name = "findimagespdf"
-version = "0.1.0"
+version = "0.1.1"
 description = "Search and save images from PDF files."
 authors = [
     {name = "kurotom",email = "55354389+kurotom@users.noreply.github.com"}
@@ -22,6 +22,9 @@ classifiers = [
 python = "^3.9"
 pillow = "^11.0"
 platformdirs = "^4.3.7"
+
+[tool.poetry.scripts]
+findimagespdf = "findimagespdf.cli:cli"
 
 [build-system]
 requires = ["poetry-core>=2.0.0,<3.0.0"]
