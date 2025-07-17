@@ -5,6 +5,7 @@ Tool to extract images from PDF files, avoiding duplicates and storing images in
 The main directory is stored on the desktop and contains all subdirectories with PDF file names with their images.
 
 * Directory structure:
+
 ```bash
 FindImagesPDF
 ├── file1
